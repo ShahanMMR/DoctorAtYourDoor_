@@ -1,0 +1,44 @@
+/* Global Styles set by Shahan ,we try to follow this color match if we can*/
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #004080;
+    --accent-color: #ff6600;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+/* Header Styles by shahan */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo Styles */
+.logo-img {
+    height: 100px; 
+    width: auto;
+    transition: height 0.3s ease;
+}
