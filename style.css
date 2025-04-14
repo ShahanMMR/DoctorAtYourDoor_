@@ -255,3 +255,74 @@ html, body {
 main {
     padding-bottom: 60px; 
 }
+
+/* Search Form Customization By Ayan */
+.navbar .form-control {
+    border-color: var(--light-gray);
+    min-width: 200px;
+}
+
+.navbar .btn-outline-light {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+/* Services Page Styles by Ayan */
+.services-header {
+    padding: 60px 0;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.services-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.services-list {
+    padding: 60px 0;
+}
+
+.service-card {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 30px;
+    flex: 1;
+}
+
+.service-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.service-info p {
+    margin-bottom: 20px;
+}
+
+.service-info ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.service-info ul li {
+    margin-bottom: 8px;
+}
+
