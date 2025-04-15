@@ -32,3 +32,34 @@ searchForm.addEventListener("submit", function (e) {
         alert("No matching services found. Try 'General', 'Chronic', or 'Elderly'.");
     }
 });
+
+// Labib: Appointment form submission and validation
+const bookingForm = document.querySelector("#booking-form");
+if (bookingForm) {
+    bookingForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Labib: Form field validation
+        const fullName = document.querySelector("#full-name").value.trim();
+        const phone = document.querySelector("#phone").value.trim();
+        const address = document.querySelector("#address").value.trim();
+        const service = document.querySelector("#service").value;
+        const date = document.querySelector("#date").value;
+        const time = document.querySelector("#time").value;
+
+        // Basic validation
+        if (!fullName || !phone || !address || !service || !date || !time) {
+            alert("Please fill out all required fields!");
+            return;
+        }
+
+        if (!/^\d{10,}$/.test(phone)) {
+            alert("Please enter a valid phone number (at least 10 digits)!");
+            return;
+        }
+
+        // Labib: Success alert for form submission
+        alert(`Appointment requested successfully!\n\nDetails:\nName: ${fullName}\nPhone: ${phone}\nService: ${service}\nDate: ${date}\nTime: ${time}`);
+        bookingForm.reset(); // Reset form after submission
+    });
+}
